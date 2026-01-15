@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #87CEEB; /* Sky blue */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#game-container {
+  position: relative;
+  width: 100vw;
+  height: 56.25vw; /* 16:9 ratio */
+  max-height: 100vh;
+  background: url('clouds.png') repeat-x #87CEEB;
+  overflow: hidden;
+}
+
+#gameCanvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#score {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+
+#game-over {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: none;
+}
+
+#game-over h1 {
+  font-size: 48px;
+  color: red;
+  text-shadow: 2px 2px 4px black;
+}
+
+#resetBtn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
